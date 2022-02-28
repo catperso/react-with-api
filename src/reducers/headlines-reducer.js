@@ -6,7 +6,7 @@ const defaultState = {
   error: null
 }
 
-export default (state = initialState, action) => {
+export default (state = defaultState, action) => {
   switch (action.type) {
     case c.REQUEST_HEADLINES:
       return Object.assign({}, state, {
